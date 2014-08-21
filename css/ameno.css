@@ -1,0 +1,150 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #000;
+    background: #FFFFFF;
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+.main {
+	width: 100%;
+	padding: 0 2em 3em;
+	max-width: 100em;
+}
+.ameno-form {
+	position: relative;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.ameno-form:before, 
+.ameno-form:after { 
+	content: " "; display: table; 
+}
+
+.ameno-form:after { 
+	clear: both; 
+}
+
+.ameno-column {
+	width: 33%;
+	padding: 10px 30px;
+	float: left;
+}
+
+.ameno-form label {
+	display: block;
+	padding: 40px 5px 5px 2px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	color: black;
+}
+
+.ameno-form input,
+.ameno-form textarea,
+.ameno-form select {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 1.4em;
+	padding: 5px 10px;
+	color: rgba(0,0,0,0.3);
+	display: block;
+	width: 100%;
+	background: transparent;
+}
+
+.ameno-form input,
+.ameno-form textarea {
+	border: 3px solid #A6A497;
+}
+
+.ameno-form textarea {
+	min-height: 200px;
+}
+
+.ameno-form input:focus,
+.ameno-form textarea:focus,
+.ameno-form label:active + input,
+.ameno-form label:active + textarea {
+	outline: none;
+	border: 3px solid #6FB07F;
+	color: #6FB07F;
+}
+
+.ameno-form select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgba(0,0,0,0.3);
+    font-style: italic;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgba(0,0,0,0.3);
+    font-style: italic;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgba(0,0,0,0.3);
+    font-style: italic;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: rgba(0,0,0,0.3);
+    font-style: italic;
+}
+
+.ameno-submit-wrap {
+	text-align: center;
+	padding-top: 40px;
+	clear: both;
+}
+
+.ameno-form input.ameno-submit {
+	background: #10689a;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+.ameno-form input.ameno-submit:hover {
+	background: #1478b1;
+}
+
+@media screen and (max-width: 70em) {
+	.ameno-column {
+		width: 50%;
+	}
+	.ameno-column:nth-child(3) {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.ameno-column {
+		width: 100%;
+		padding: 10px;
+	}
+}
